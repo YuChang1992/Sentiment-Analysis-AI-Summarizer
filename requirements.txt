@@ -1,0 +1,9 @@
+Flask
+scikit-image
+openai
+keras
+nltk
+tensorflow
+matplotlib
+pickle
+numpy

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>	    
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body class="col-md-6 mx-auto text-center">    
+	<div class="centered"> "{{ user_email }}" </div>
+	<b class="form-label fw-bold fs-5">"{{ user_imdb }}"</b>
+	<br/>
+	<img src="{{ user_icon }}" width="25%" height="25%">
+	<br/>
+	<b class="form-label fw-bold fs-5">"{{ user_openai }}"</b>
+    <p class="fs-5">
+    </p>
+	<a href="{{ url_for('index') }}" class="btn btn-primary btn-lg px-4 gap-3">Back home</a>
+</body>
+</html>
